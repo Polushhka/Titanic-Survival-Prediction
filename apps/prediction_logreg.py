@@ -255,8 +255,8 @@ def app(df, current_dir: Path):
         """
     )
     try:
-        # def test1():
-        # return joblib.load(str(current_dir / "models" / 'logistic_regression_model.joblib'))
+        def test1():
+            return joblib.load(str(current_dir / "models" / 'logistic_regression_model.joblib'))
         lin_reg = test1()
     except Exception as e:
         lin_reg = LogisticRegression(C=0.01, penalty='l2', solver='liblinear')
